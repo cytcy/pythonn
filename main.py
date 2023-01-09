@@ -1,0 +1,11 @@
+import pyautogui as gui
+import time
+
+message = input("Enter the message: ")
+number = input("Enter the number: ")
+
+time.sleep(5)
+
+for i in range(int(number)):
+    gui.typewrite(message)
+    gui.press('Enter')
